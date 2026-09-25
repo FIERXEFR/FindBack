@@ -1225,11 +1225,15 @@ function fitLayout(){
   const L = document.querySelector('.layout');
   if(!wrap || !L) return;
   L.style.transform = '';
+  L.style.width = '';
   wrap.style.height = '';
-  const kids = [...L.children];
-  const design = kids.reduce((a, c) => a + c.offsetWidth, 0) + 44 * (kids.length - 1);
+  L.style.width = 'max-content';
+  const design = L.offsetWidth;
   const avail = wrap.clientWidth;
-  if(!design || !avail || design <= avail + 1) return;
+  if(!design || !avail || design <= avail + 1){
+    L.style.width = '';
+    return;
+  }
   const s = avail / design;
   L.style.transform = 'scale(' + s + ')';
   wrap.style.height = Math.ceil(L.offsetHeight * s) + 'px';
