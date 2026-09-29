@@ -726,7 +726,7 @@ const feedItems = [
   {e:'🔑', t:'Scooter keys · GATE-2 tag', s:'Found · Gate 2 · Anushka P. · 23EC1011 · 25m', c:'open', l:'Open', id:'620937'},
   {e:'🧴', t:'Steel water bottle', s:'Lost · Library 2nd floor · Isha N. · 24CS1155 · 1d', c:'matched', l:'Matched', id:'357164'},
   {e:'📁', t:'ECE-204 lab file', s:'Found · Lecture Hall B · Priya M. · 23EC1076 · 6h', c:'open', l:'Open', id:'740518'},
-  {e:'🪪', t:'ID card · Anand M', s:'Found · Lab 3 · closed by the desk · yesterday', c:'returned', l:'Returned', id:'294615'},
+  {e:'🪪', t:'ID card · ANUSHKA M', s:'Found · Lab 3 · closed by the desk · yesterday', c:'returned', l:'Returned', id:'294615'},
   {e:'📐', t:'Calculator FX-82', s:'Lost · Exam Hall 2 · Tara V. · 22CS0912 · 3h', c:'open', l:'Open', id:'604932'},
   {e:'🔊', t:'Bluetooth speaker', s:'Found · Hostel A mess · Neha R. · 24EC1021 · 5h', c:'matched', l:'Matched', id:'813726'}
 ];
@@ -789,7 +789,7 @@ function screenHTML(name){
     <div class="appbar">📍 FindBack — Central Campus</div>
     <div class="body-scroll">
       <div>
-        <p class="greet">Hi Anand 👋</p>
+        <p class="greet">Hi ANUSHKA 👋</p>
         <p class="sub">Roll 23CS1042 · what do you need?</p>
       </div>
       <button class="action-card lost">🎒 I Lost Something<span>Report a missing item</span></button>
@@ -823,7 +823,7 @@ function screenHTML(name){
         <div class="case-foot">Step 3 of 5 · claim request sent</div>
       </div>
       <div class="case-card dim">
-        <div class="case-top"><b>🪪 ID card · Anand M</b><span class="case-tag returned">Handed over ✓</span></div>
+        <div class="case-top"><b>🪪 ID card · ANUSHKA M</b><span class="case-tag returned">Handed over ✓</span></div>
         <small>Lab 3 · closed on 12 Sep<span class="case-id">#294615</span></small>
         <div class="stepbar"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
         <div class="case-foot">5 of 5 · signed at the desk</div>
@@ -878,7 +878,7 @@ function screenHTML(name){
         <div class="confirm-row"><span class="k">📝 Description</span><span class="v">White wireless earbuds, small scratch on the lid</span></div>
         <div class="confirm-row"><span class="k">📍 Place</span><span class="v">Central Library, 2nd floor</span></div>
         <div class="confirm-row"><span class="k">🕐 Time</span><span class="v">Today, 3:40 PM</span></div>
-        <div class="confirm-row"><span class="k">📌 Report type</span><span class="v">Lost item · Anand Meena · 23CS1042</span></div>
+        <div class="confirm-row"><span class="k">📌 Report type</span><span class="v">Lost item · ANUSHKA JHARWAL · 23CS1042</span></div>
       </div>
       <div class="campus-map">
         <svg viewBox="0 0 268 236" preserveAspectRatio="xMidYMin slice" aria-label="Draft campus map">
@@ -1015,7 +1015,7 @@ function runScreenAnimations(name){
     later(()=>{ const badge = document.getElementById('otpBadge'); if(badge) badge.classList.add('show'); }, 2350);
   }
   if(name==='profile'){
-    typeText(document.getElementById('typedName'), 'Anand Meena', 75);
+    typeText(document.getElementById('typedName'), 'ANUSHKA Meena', 75);
   }
   if(name==='report'){
     const add = document.getElementById('addCat');
